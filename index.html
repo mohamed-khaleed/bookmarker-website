@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+   <h2 class="m-2">Bookmarker</h2>
+   <hr>
+  <section id="bookmarkerBody" class="text-center py-5" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bookmarkerHeader text-center" >
+                        <h1>book mark your favorite sites</h1>
+                        <label for="bookNameInput" class="form-label">site name</label>
+                        <input type="text" class="form-control mb-3" id="bookNameInput">
+                        <div class="alert alert-danger d-none" id="alertDivName" role="alert">
+                            you should enter correct format! it should contain charachters from 4 to 16 and a small charachters
+                          </div> 
+                        <label for="bookUrlInput" class="form-label">site URL</label>
+                        <input type="email" class="form-control mb-3"  id="bookUrlInput">
+                        <div class="alert alert-danger d-none " id="alertDivUrl" role="alert">
+                            you should enter an url format! The url should start with either http or https followed by ://. The combined length of the sub-domain and domain must be between 2 and 256. It should only contain alphanumeric characters and/or special characters
+                          </div> 
+                        <button type="submit" class="btn btn-outline-success" id="submitBtn">Submit</button>
+                    </div>      
+                </div>
+            </div>
+        </div>
+  </section> 
+
+  <section id="bookMarkerTable" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bookMarkerTable">
+                    <table class="table">
+                        <thead class="text-center">
+                            <th >book name</th>
+                            <th >visit book url</th>
+                            <th>delete book url</th>
+                        </thead>
+                        <tbody class="text-center" id="tableBody">
+                            
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

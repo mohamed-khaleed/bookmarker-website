@@ -1,0 +1,44 @@
+body
+{
+    background-color: #83764F;
+    color: #E5F9DB !important;
+}
+
+.form-control
+{
+    background-color: #A2A378!important;
+}
+.btn{
+    color:#E5F9DB;
+    border-color: #E5F9DB;
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+.btn:hover
+{
+    background-color: #E5F9DB ;
+    color: #83764F ;
+}
+#visitBtn a
+{   
+    color: #E5F9DB;
+    text-decoration: none;
+}
+#visitBtn:hover a{
+    background-color: #E5F9DB ;
+    color: #83764F ;
+}
+th ,  td
+{
+    color: #E5F9DB;
+}
+#alertDiv
+{
+    display: none;
+}
+
+.form-control:focus {
+    border-color: #E5F9DB;
+    box-shadow: 0 0 0 0.2rem #E5F9DB;
+} 
